@@ -30,7 +30,7 @@ void shell_sort(int *array, size_t size)
 			value = array[i];
 			j = i;
 
-			while (j > gap - 1 && array[j - gap] >= (int)value)
+			while (j >= gap - 1 && array[j - gap] > (int)value)
 			{
 				array[j] = array[j - gap];
 				j = j - gap;
