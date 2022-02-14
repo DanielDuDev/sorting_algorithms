@@ -30,35 +30,35 @@ int size_list(listint_t *list)
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *h = *list, *current = NULL, *head = NULL, *phead = NULL;
+	listint_t *current = NULL, *phead = NULL;
 
-	if (h && h->next)
+	if (*list != NULL && (*list)->next != NULL && list != NULL)
 	{
-		while (h != NULL)
+		current = (*list)->next;
+		while (current != NULL)
 		{
-			current = h;
-			h = h->next;
-			if (head == NULL || current->n < head->n)
+			phead = current->next;
+			while (current->prev != NULL && current->n < current->prev->n)
 			{
-				/*insert inte the head of ther sorted list*/
-				current->next = head;
-				head = current;
-			}
-			else
-			{
-				phead = head;
-				while (phead != NULL)
+				if (current->next != NULL)
 				{
-					if (phead->next == NULL || current->n < phead->next->n)
-					{
-						current->next = phead->next;
-						phead->next = current;
-						break;
-					}
-					phead = phead->next;
+					current->next->prev = current->prev;
 				}
+				current->prev->next = current->next;
+				current->next = current->prev;
+				current->prev = current->next->prev;
+				current->next->prev = current;
+				if (current->prev != NULL)
+				{
+					current->prev->next = current;
+				}
+				else
+				{
+					*list = current;
+				}
+				print_list(*list);
 			}
+			current = phead;
 		}
 	}
-	*list = head;
 }
