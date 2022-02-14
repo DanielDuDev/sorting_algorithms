@@ -17,3 +17,5 @@ Read or watch:
 - [shell sort](https://en.wikipedia.org/wiki/Shellsort)
   - [video dancer](https://www.youtube.com/watch?v=CmPA7zE8mx0&ab_channel=AlgoRythmics)
   - [source code](https://www.tutorialspoint.com/data_structures_algorithms/shell_sort_algorithm.htm)
+- [counting sort](https://en.wikipedia.org/wiki/Counting_sort)
+  - [code](https://www.programiz.com/dsa/counting-sort)
