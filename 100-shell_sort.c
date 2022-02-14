@@ -23,7 +23,7 @@ void shell_sort(int *array, size_t size)
 		gap = gap * 3 + 1; /*Knuth sequence*/
 	}
 
-	while (gap > 0)
+	while (gap >= 1)
 	{
 		for (i = gap; i < size; i++)
 		{
