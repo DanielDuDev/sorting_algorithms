@@ -86,5 +86,5 @@ void quick_sort(int *array, size_t size)
 	{
 		return;
 	}
-	QuickSort(array, 0, (int)size, (int)size);
+	QuickSort(array, 0, (unsigned int)size - 1, (unsigned int)size);
 }
