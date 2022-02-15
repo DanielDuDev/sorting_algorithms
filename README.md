@@ -21,3 +21,5 @@ Read or watch:
   - [code](https://www.programiz.com/dsa/counting-sort)
 - [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
   - [code](https://www.programiz.com/dsa/merge-sort)
+- [Heap sort](https://en.wikipedia.org/wiki/Heapsort)
+  - [code](https://www.programiz.com/dsa/heap-sort)
