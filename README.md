@@ -19,3 +19,5 @@ Read or watch:
   - [source code](https://www.tutorialspoint.com/data_structures_algorithms/shell_sort_algorithm.htm)
 - [counting sort](https://en.wikipedia.org/wiki/Counting_sort)
   - [code](https://www.programiz.com/dsa/counting-sort)
+- [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+  - [code](https://www.programiz.com/dsa/merge-sort)
